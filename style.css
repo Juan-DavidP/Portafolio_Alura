@@ -4,25 +4,29 @@ en las secciones señaladas */
 /*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
 coloque nas sessões indicadas*/
 
-:root{
+:root {
     /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
-   --cor-de-fundo: #F5F5F5;
-   --cor-de-link: #000;
+    --cor-de-fundo: #F5F5F5;
+    --cor-de-link: #000;
 }
 
 body {
     box-sizing: border-box;
-    background-color: var(--cor-de-fundo) ;
+    background-color: var(--cor-de-fundo);
     font-family: 'Raleway';
     margin: 0;
     padding: 0;
     line-height: 1;
 }
-ol, ul,li {
+
+ol,
+ul,
+li {
     list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
     color: var(--cor-de-link);
 }
@@ -41,51 +45,191 @@ https://en.bem.info/methodology/quick-start/*/
 
 /*Sección Menu*/
 
-section.menu{
-
+section.menu {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
 }
+
+.menu__header {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 90px;
+}
+
+.menu__header img {
+    margin-right: 10px;
+}
+
+.menu__list {
+    display: flex;
+    gap: 25px;
+}
+
+.menu__list li:nth-child(6) {
+    font-weight: bolder;
+    margin-right: 50px;
+}
+
 
 /*Sección Title*/
 
-section.title{
+section.title {
+    display: flex;
+    justify-content: space-around;
+}
+
+.title__div {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    margin: 80px 30px 15px 90px;
+}
+
+.title__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.title__bio {
+    font-size: 52px;
+    font-weight: bold;
+}
+
+h3.title__subsection {
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+.title__network {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    padding-left: 0;
 
 }
+
 
 /*Sección About*/
 
-section.about{
-
+section.about {
+    width: 100%;
+    background-color: #EAF2FD;
+    display: flex;
 }
+
+.about__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 20px 90px 20px 80px;
+    padding-right: 300px;
+}
+
+.about__title {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.about__paragraph {
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+/*Sección Skills */
+
+section.skills {
+    display: flex;
+    flex-direction: column;
+}
+
+.skills__title {
+    display: flex;
+    justify-content: center;
+}
+
+.skills__line {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow-x: auto;
+}
+
+.skills__box ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-color: #FFFFFF;
+    width: 150px;
+    height: 170px;
+    padding-left: 25px;
+}
+
+.skills__img {
+    margin-bottom: 10px;
+}
+
+.skills__name {
+    padding-bottom: 20px;
+}
+
 
 /*Sección Hobbies*/
 
-section.hobbies{
-    
+section.hobbies {
+    display: flex;
+    flex-direction: column;
+}
+
+.hobbies__title {
+    display: flex;
+    justify-content: center;
+}
+
+.hobbies__line {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.hobbies__box ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-color: #FFFFFF;
+    width: 150px;
+    height: 170px;
+    padding-left: 25px;
+    /* 44, 124, 228 RGB iconos */
+}
+
+.hobbies__img {
+    margin-bottom: 10px;
+}
+
+.hobbies__name {
+    padding-bottom: 20px;
 }
 
 /* Experiencia Académica*/
 
-section.academic{
-
-}
+section.academic {}
 
 /* experiencia*/
 
-section.experience{
-
-}
+section.experience {}
 
 /*Contacto*/
 
-section.formcontato{
-
-}
+section.formcontato {}
 
 /*footeer*/
 
-section.footer{
-   
-}
+section.footer {}
 
 /* Vamos a desafiarnos trabajando con responsividad?
 Utiliza las referencias de los breakpoints @media abajo */
@@ -94,39 +238,39 @@ Utiliza las referencias de los breakpoints @media abajo */
 /*Tablet*/
 @media (min-width: 768px) {
 
-/* Menú */
+    /* Menú */
 
-/*title*/
+    /*title*/
 
-/*Skills*/
+    /*Skills*/
 
-/*Hobbies*/
+    /*Hobbies*/
 
-/*Formación Académica*/
+    /*Formación Académica*/
 
-/*Experiencia Profesional*/
+    /*Experiencia Profesional*/
 
 }
 
 /*Mobile*/
 @media (min-width: 425px) {
 
-/*Menu*/
+    /*Menu*/
 
-/*Titulo*/
+    /*Titulo*/
 
-/*Sección sobre mi*/
+    /*Sección sobre mi*/
 
-/*Skills*/
+    /*Skills*/
 
-/*Hobbies*/
- 
-/*Formación Académica*/
+    /*Hobbies*/
 
-/*Experiencia Profesional*/
+    /*Formación Académica*/
 
- /*Contacto*/
+    /*Experiencia Profesional*/
 
-/*Footer*/
+    /*Contacto*/
+
+    /*Footer*/
 
 }
