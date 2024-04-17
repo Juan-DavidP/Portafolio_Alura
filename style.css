@@ -9,6 +9,7 @@ coloque nas sessões indicadas*/
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
     --cor-de-fundo: #F5F5F5;
     --cor-de-link: #000;
+    color: #464646;
 }
 
 body {
@@ -49,6 +50,7 @@ section.menu {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    margin-top: 25px;
 }
 
 .menu__header {
@@ -125,7 +127,8 @@ section.about {
     justify-content: space-around;
     align-items: flex-start;
     margin: 20px 90px 20px 80px;
-    padding-right: 300px;
+    text-align: justify;
+    /* padding-right: 300px; */
 }
 
 .about__title {
@@ -148,13 +151,14 @@ section.skills {
 .skills__title {
     display: flex;
     justify-content: center;
+    font-size: 32px;
+    font-weight: bold;
 }
 
 .skills__line {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    overflow-x: auto;
 }
 
 .skills__box ul {
@@ -187,6 +191,8 @@ section.hobbies {
 .hobbies__title {
     display: flex;
     justify-content: center;
+    font-size: 32px;
+    font-weight: bold;
 }
 
 .hobbies__line {
@@ -217,19 +223,233 @@ section.hobbies {
 
 /* Experiencia Académica*/
 
-section.academic {}
+section.academic {
+    display: flex;
+    flex-direction: column;
+    background-color: #EAF2FD;
+}
+
+.academic__title {
+    text-align: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.academic__courses {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-self: center; */
+}
+
+.academic__courses__item__img {
+    background: #FFFFFF;
+    padding: 50px;
+}
 
 /* experiencia*/
 
-section.experience {}
+section.experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experience__section__title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.experiencie__box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.experience__box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.experiencie__box:nth-child(3) {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.experience__box {
+    display: flex;
+}
+
+.experience__box:nth-child(5) {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.experience__info {
+    margin-left: 20px;
+    margin-right: 20px;
+    align-items: center;
+}
+
+.experience__info-container {
+    margin-left: 20px;
+    margin-right: 20px;
+    align-items: center;
+}
+
+.experience__title {
+    margin-block-end: 8px;
+}
+
+.experience__text {
+    font-weight: lighter;
+    margin-block-start: 0;
+}
+
+.experiencia__botao--repo {
+    background-color: transparent;
+    color: #2A7AE4;
+    border: solid #2A7AE4 1px;
+    padding: 20px 35px;
+    margin-right: 15px;
+}
+
+.experience__botao--demo {
+    background-color: #2A7AE4;
+    color: white;
+    border: none;
+    padding: 20px 35px;
+}
 
 /*Contacto*/
 
-section.formcontato {}
+section.formcontato {
+    background-color: #EAF2FD;
+    display: flex;
+}
+
+.formcontato__contacto {
+    display: flex;
+    margin: 90px 0 40px 100px;
+
+}
+
+.formcontato--esquerda {
+    margin-right: 30px;
+
+}
+
+.formcontato__img {
+    height: 700px;
+    width: 500px;
+}
+
+.formcontato__text {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.formcontato__title {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.formcontato__subtext {
+    font-size: 16px;
+    font-weight: lighter;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.formcontato__form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    /* gap: 30px; */
+}
+
+.formcontato__input {
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+    width: 590px;
+    padding: 20px 30px;
+    border: none;
+    font-size: 16px;
+}
+
+.formcontato__input:focus {
+    outline: none;
+    border-bottom: 2px solid #2A7AE4;
+}
+
+.formcontato__input:focus::placeholder {
+    color: #2A7AE4;
+    top: -20px;
+}
+
+.formcontato__textarea {
+    resize: none;
+    border: none;
+    width: 590px;
+    height: 120px;
+    padding: 20px 30px;
+    margin-top: 35px;
+    font-size: 16px;
+}
+
+.formcontato__textarea:focus {
+    outline: none;
+    border-bottom: 2px solid #2A7AE4;
+}
+
+.formcontato__botao {
+    margin: 40px 0;
+    padding: 20px;
+    width: 140px;
+    background-color: #2A7AE4;
+    color: white;
+    border: solid #2A7AE4 1px;
+
+}
+
+.formcontato__advertencia {
+    font-weight: bold;
+    font-family: 'Raleway';
+    margin-top: 10px;
+    margin-bottom: 0;
+    display: none;
+    color: red;
+    font-size: 16px;
+}
 
 /*footeer*/
 
-section.footer {}
+section.footer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+    background-color: #F5F5F5;
+}
+
+.footer__rodape {
+    text-align: center;
+    padding: 28px;
+}
+
+.footer__rodape p {
+    margin-bottom: 0;
+}
 
 /* Vamos a desafiarnos trabajando con responsividad?
 Utiliza las referencias de los breakpoints @media abajo */
