@@ -476,6 +476,11 @@ Utiliza las referencias de los breakpoints @media abajo */
 @media (min-width: 425px) {
 
     /*Menu*/
+    section.menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
     /*Titulo*/
 
