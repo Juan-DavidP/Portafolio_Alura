@@ -115,7 +115,10 @@ inputMensaje.addEventListener('blur', validacionMensaje);
 // inputNombre.addEventListener('blur', (e) => validacionInput("nombre", e));
 // document.getElementById('boton__enviar').addEventListener('click', console.log("prueba"))
 botonEnviar.addEventListener('click', (e) => {
-    if (validacionNombre() == "" || validacionEmail() == "" || validacionAsunto() == "" || validacionMensaje() == "") {
+    if (validacionNombre() == "" && validacionEmail() == "" && validacionAsunto() == "" && validacionMensaje() == "") {
+        e.preventDefault();
+    }
+    else if (validacionNombre() == "" || validacionEmail() == "" || validacionAsunto() == "" || validacionMensaje() == "") {
         e.preventDefault();
     }
 })
